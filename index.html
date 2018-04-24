@@ -8,48 +8,131 @@
     <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
+<!-- ////////////////////////////// header /////////////////////////////////-->
     <header>
         <div class="LOGOBox">
             <a href="index.html"><img src="./images/LOGO.png" alt="LOGO"></a>
         </div>
     </header>
 
+<!-- ////////////////////////////// nav /////////////////////////////////-->
     <nav>
         <div class="navbar">
-            <div class="meanu">
-                <ul>
-                    <div class="home">
-                        <a href="index.html"><li>飯店首頁</li></a>
-                    </div>
-                    <div class="summary">
-                        <a href="#"><li>飯店簡介</li></a>
-                    </div>
-                    <div class="news">
-                        <a href="#"><li>最新消息</li></a>
-                    </div>
-                    <div class="rooms">
-                        <a href="#"><li>客房介紹</li></a>
-                    </div>
-                    <div class="salon">
-                        <a href="#"><li>美容休閒</li></a>
-                    </div>
-                </ul>
-            </div>
-            <div class="booking">
-                <img src="./images/bed.png" alt="bed">
-                <a href="#"><li>線上訂房</li></a>
-            </div>
+            <ul>
+                <a href="index.html"><div class="home"><li>飯店首頁</li></div></a>
+                <a href="#"><div class="summary"><li>飯店簡介</li></div></a>
+                <a href="#"><div class="news"><li>最新消息</li></div></a>
+                <a href="#"><div class="rooms"><li>客房介紹</li></div></a>
+                <a href="#"><div class="salon"><li>美容休閒</li></div></a>
+            </ul>
         </div>
+        <a href="#">
+        <div class="booking">
+            <img src="./images/bed.png" alt="bed">
+            <li>線上訂房</li>
+        </div>
+        </a>
     </nav>
 
+<!-- ////////////////////////////// 網頁大圖片 /////////////////////////////////-->
+    <div class="mainImg">
+        <img class="mySlides" src="./images/homeBack.jpg" alt="homeBack">
+        <img class="mySlides" src="./images/homeBack2.jpg" alt="homeBack2">
+        <img class="mySlides" src="./images/homeBack3.jpg" alt="homeBack3">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+    </script>
 
+<!-- ////////////////////////////// 網頁三小圖片 /////////////////////////////////-->
+    <div class="slide1">
+        <img src="./images/slide1.jpg" alt="slide1">
+    </div>
+    <div class="slide2">
+        <img src="./images/slide2.jpg" alt="slide2">
+    </div>
+    <div class="slide3">
+        <img src="./images/slide3.jpg" alt="slide3">
+    </div>
 
+<!-- ////////////////////////////// 飯店簡易介紹 /////////////////////////////////-->
+    <div class="hotelInfo">
+        <p class="issue">金紙馬餐旅傳奇</p>
+        <div class="crossLine">
+            <img src="./images/line.png" alt="crossLine">
+        </div>
+        <p class="issueInfo">
+            金紙馬集團以在餐飲業出類拔萃的餐飲品牌基石<br>
+            跨足國際五星級觀光飯店成立「金紙馬大酒店」<br>
+            在「金紙馬大酒店」優質服務的理念下，創立全<br>
+            台觀光飯店的餐旅新典範。
+        </p>
+    </div>
 
-
-
-
-
-
+<!-- ////////////////////////////// 促銷活動 /////////////////////////////////-->
+    <div class="ActivieInfo">
+        <p class="issue">活動消息</p>
+        <div class="crossLine">
+            <img src="./images/line.png" alt="crossLine">
+        </div>
+        <div class="roomsInfo">
+            <img src="./images/roomsInfo.jpg" alt="roomsInfo">
+            <p class="infoIssue-room">客房促銷</p>
+            <div class="activity">
+                <a href="#"><p>【2018台中預購開跑】</p></a>
+                <a href="#"><p>【高爾夫球假期專案】</p></a>
+                <a href="#"><p>【早鳥優惠】</p></a>
+                <a href="#"><p>【商務住宿專案】</p></a>
+            </div>
+            <a href="#" class="more"><p>>> more</p></a>
+        </div>
+        <div class="foodInfo">
+            <img src="./images/foodInfo.png" alt="foodInfo">
+            <p class="infoIssue-food">餐飲促銷</p>
+            <div class="activity">
+                <a href="#"><p>【金紙馬50同慶餐飲優惠】</p></a>
+                <a href="#"><p>【感恩老師！謝師宴專案】</p></a>
+                <a href="#"><p>【時尚美味，越髒越美味】</p></a>
+                <a href="#"><p>【桐花客家趣】</p></a>
+            </div>
+            <a href="#" class="more"><p>>> more</p></a>
+        </div>
+        <div class="salonInfo">
+            <img src="./images/salonInfo.jpg" alt="salonInfo">
+            <p class="infoIssue-salon">美容休閒促銷</p>
+            <div class="activity">
+                <a href="#"><p>【母親節感恩優惠】</p></a>
+                <a href="#"><p>【SPA美容搶先購】</p></a>
+                <a href="#"><p>【溫泉祭典，放鬆心情】</p></a>
+                <a href="#"><p>【健身專屬教練專案】</p></a>
+            </div>
+            <a href="#" class="more"><p>>> more</p></a>
+        </div>
+        <div class="newsInfo">
+            <img src="./images/newsInfo.jpg" alt="newsInfo">
+            <p class="infoIssue-news">新聞中心</p>
+            <div class="activity">
+                <a href="#"><p>【五星級有省錢】</p></a>
+                <a href="#"><p>【108年特殊節日公告】</p></a>
+                <a href="#"><p>【金紙馬大飯店公告】</p></a>
+                <a href="#"><p>【新人喜宴專案】</p></a>
+            </div>
+            <a href="#" class="more"><p>>> more</p></a>
+        </div>
+    </div>
 
     <footer>
         <div class="footerBox">
@@ -58,7 +141,7 @@
                     <a href="index.html"><img src="./images/LOGO.png" alt="LOGO"></a>
                 </div>
                 <div class="star">
-                    <a href="#"><img src="./images/star.jpg" alt="star"></a>
+                    <a href="https://taiwanstay.net.tw/"><img src="./images/star.jpg" alt="star"></a>
                 </div>
             </div>
 
@@ -85,19 +168,19 @@
                     </ul>
                     <div class="icon">
                         <div class="facebook">
-                            <a href="#"><img src="./images/facebook-icon.jpg" alt="facebook"></a>
+                            <a href="https://www.facebook.com/"><img src="./images/facebook-icon.jpg" alt="facebook"></a>
                         </div>
                         <div class="google">
-                            <a href="#"><img src="./images/google-icon.png" alt="google-plus"></a>
+                            <a href="https://plus.google.com/?hl=zh-TW"><img src="./images/google-icon.png" alt="google-plus"></a>
                         </div>
                         <div class="youtube">
-                            <a href="#"><img src="./images/YouTube-icon.png" alt="youtube"></a>
+                            <a href="https://www.youtube.com/"><img src="./images/YouTube-icon.png" alt="youtube"></a>
                         </div>
                         <div class="twitter">
-                            <a href="#"><img src="./images/Twitter-icon.png" alt="twitter"></a>
+                            <a href="https://twitter.com/?lang=zh-tw"><img src="./images/Twitter-icon.png" alt="twitter"></a>
                         </div>
                         <div class="line">
-                            <a href="#"><img src="./images/line-icon.png" alt="line"></a>
+                            <a href="http://line.naver.jp/ti/p/UTU-tPxCx2"><img src="./images/line-icon.png" alt="line"></a>
                         </div>
                     </div>
                 </div>
@@ -118,6 +201,8 @@
                 </div>
             </div>
         </div>
+
+<!-- ////////////////////////////// 頁底 /////////////////////////////////-->        
     </footer>
 </body>
 </html>
