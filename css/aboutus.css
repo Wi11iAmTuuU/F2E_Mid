@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-color: black;
 }
 body a:visited{
     color: wheat;
@@ -26,65 +27,132 @@ header{
 nav{
     height: 45px;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.85;
     letter-spacing: 2px;
-}
-.navbar{
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 0px;
 }
-nav img{
+/* nav img{
     width: 25px;
     height: inherit;
     float: left;
+} */
+nav a{
+    text-decoration: none;
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar{
+    font-family: '微軟正黑體';
+    font-size: 18px;
+    float: left;
+    width: fit-content;
+    height: 45px;
+}
+.navbar li{
+    color: white;
+}
+.home{
+    float: left;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 35px;
+}
+.home:hover{
+    background-color: rgb(100, 73, 32);
+}
+.home:hover > li{
+    color: rgb(202, 176, 136);
+}
+.summary{
+    float: left;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 35px;
+}
+.summary:hover{
+    background-color: rgb(100, 73, 32);
+}
+.summary:hover > li{
+    color: rgb(202, 176, 136);
+}
+.news{
+    float: left;
+    padding-top:10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 35px;
+}
+.news:hover{
+    background-color: rgb(100, 73, 32);
+}
+.news:hover > li{
+    color: rgb(202, 176, 136);
+}
+.rooms{
+    float: left;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 35px;
+}
+.rooms:hover{
+    background-color: rgb(100, 73, 32);
+}
+.rooms:hover > li{
+    color: rgb(202, 176, 136);
+}
+.salon{
+    float: left;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 35px;
+}
+.salon:hover{
+    background-color: rgb(100, 73, 32);
+}
+.salon:hover > li{
+    color: rgb(202, 176, 136);
 }
 .booking{
     float: right;
+    width: fit-content;
+    height: 45px;
+}
+.booking img{
+    width: 25px;
+    height: 32px;
+    padding-top: 5px;
+    padding-left: 10px;
+    float: left;
 }
 .booking li{
     list-style-type: none;
-    padding-right: 0px;
+    padding-right: 10px;
     padding-left: 10px;
+    padding-top: 10px;
     font-family: '微軟正黑體';
     font-size: 18px;
     float: left;
     color: wheat;
 }
-.meanu ul{
-    margin: 0px;
-    padding-top: 10px;
-    list-style-type: none;
-    padding-left: 0px;
+.booking:hover{
+    background: rgba(255, 255, 255, 0.445);
 }
-.meanu ul li{
-    font-family: '微軟正黑體';
-    font-size: 18px;
-    float: left;
+.booking:hover li{
     color: white;
-    padding-right: 80px;
 }
 nav:after{
     content: "";
     display: block;
     clear: both;
-}
-.home a:hover > li{
-    color: wheat;
-}
-.summary a:hover > li{
-    color: wheat;
-}
-.news a:hover > li{
-    color: wheat;
-}
-.rooms a:hover > li{
-    color: wheat;
-}
-.salon a:hover > li{
-    color: wheat;
-}
-.booking a:hover > li{
-    color: white;
 }
 
 /* ------------------------------- article ----------------------------------*/
@@ -182,12 +250,18 @@ footer{
     margin-right: 4px;
     margin-top: 5px;
 }
+.facebook img:hover{
+    opacity: 0.5;
+}
 .google img{
     float: left;
     width: 36px;
     height: 36px;
     margin-top: 3px;
     margin-right: 5px;
+}
+.google img:hover{
+    opacity: 0.5;
 }
 .youtube img{
     float: left;
@@ -196,6 +270,9 @@ footer{
     margin-top: 5px;
     margin-right: 7px;
 }
+.youtube img:hover{
+    opacity: 0.5;
+}
 .twitter img{
     float: left;
     width: 30px;
@@ -203,10 +280,16 @@ footer{
     margin-top: 5px;
     margin-right: 6px;
 }
+.twitter img:hover{
+    opacity: 0.5;
+}
 .line img{
     width: 37px;
     height: 37px;
     margin-top: 2px;
+}
+.line img:hover{
+    opacity: 0.5;
 }
 .icon{
     width: 200px;
