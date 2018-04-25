@@ -331,10 +331,14 @@ footer{
     background-image: url('../images/footerBack.png');
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    text-align: center;
 }
 .footerBox{
     padding-top: 10px;
     padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 .logoes{
     width: fit-content;
