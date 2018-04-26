@@ -2,7 +2,7 @@ body{
     margin: 0px;
     background-color: black;
 }
-a{
+body a:visited{
     color: wheat;
 }
 /* ------------------------------- header -----------------------------------*/
@@ -11,14 +11,12 @@ header img{
     height: inherit;
     margin-left: -50px;
     margin-top: 10px;
-    display: flex;
 }
 .LOGOBox{
     margin-left: 50%;
-    display: flex;
+    
 }
 header{
-    display: flex;
     height: 120px;
     background-color: wheat;
     background-repeat: no-repeat;
@@ -35,6 +33,11 @@ nav{
     margin-right: 15%;
     margin-bottom: 0px;
 }
+/* nav img{
+    width: 25px;
+    height: inherit;
+    float: left;
+} */
 nav a{
     text-decoration: none;
 }
@@ -152,209 +155,96 @@ nav:after{
     clear: both;
 }
 
-/* ------------------------------- main -----------------------------------*/
-.mainImg img{
+/* ------------------------------- article ----------------------------------*/
+article {
+    background: black;
+}
+.fixed_item .fixed_pic{
     width: 100%;
-    height: 720px;
-    margin-bottom: 80px;
+    background-position: center center;
 }
-.newsTitle{
-    margin-left: 15%;
-    margin-right: 15%;
+.unfixed_item .title {
+    font-family: Helvetica, Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
 }
-.newsTitle p{
-    font-family: '微軟正黑體';
+.fixed_item .fixed_line{
+    display: block;
+    margin-left: 485px;
+}
+.room_main_info {
+    display: flex;
+    justify-content:space-around;
+}
+.main_top {
+    font-family: Helvetica, Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
     font-size: 22px;
-    color: white;
-    opacity: 0.6;
-    text-align: center;
-    margin: 0px;
-    margin-bottom: 20px;
+    color: #A39480;
 }
-.newsTitle img{
-    display: flex;
-    margin: auto;
-    padding-bottom: 40px;
-}
-.newsInfoBox{
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    flex-direction: row;
-}
-.newsListTitle p{
-    width: 220px;
-    font-family: '微軟正黑體';
-    font-size: 18px;
-    color: wheat;
-    background-color: rgb(51, 51, 51);
-    margin: 0px;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.newsList a{
-    text-decoration: none;
-}
-.newsList ul{
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
-}
-.roomdis ul{
-    display: none;
-}
-.fooddis ul{
-    display: none;
-}
-.salondis ul{
-    display: none;
-}
-.newsdis ul{
-    display: none;
-}
-
-.newsList li{
-    width: 210px;
-    font-family: '微軟正黑體';
-    font-size: 18px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: wheat;
-    border-bottom: 1px solid snow;
-}
-.newsList a{
-    color: rgb(127, 93, 29);
-}
-
-.roomdis li:hover{
-    background-color: rgb(198, 170, 122);
-    padding-bottom: 0px;
-}
-.roomdis li:hover > a{
-    color: snow;
-}
-.roomdis li:hover > ul{
-    display: block;
-    margin-top: 10px;
-    margin-left: -10px;
-}
-.roomdis li:hover > ul li{
-    font-size: 16px;
-    background-color: rgb(250, 247, 238);
-    padding-bottom: 10px;
-    border-bottom: 1px solid gray;
-}
-.roomdis li ul li:hover{
-    background-color: rgb(126, 89, 63);
-    color: whitesmoke;
-}
-
-.fooddis li:hover{
-    background-color: rgb(198, 170, 122);
-    padding-bottom: 0px;
-}
-.fooddis li:hover > a{
-    color: snow;
-}
-.fooddis li:hover > ul{
-    display: block;
-    margin-top: 10px;
-    margin-left: -10px;
-}
-.fooddis li:hover > ul li{
-    font-size: 16px;
-    background-color: rgb(250, 247, 238);
-    padding-bottom: 10px;
-    border-bottom: 1px solid gray;
-}
-.fooddis li ul li:hover{
-    background-color: rgb(126, 89, 63);
-    color: whitesmoke;
-}
-
-.salondis li:hover{
-    background-color: rgb(198, 170, 122);
-    padding-bottom: 0px;
-}
-.salondis li:hover > a{
-    color: snow;
-}
-.salondis li:hover > ul{
-    display: block;
-    margin-top: 10px;
-    margin-left: -10px;
-}
-.salondis li:hover > ul li{
-    font-size: 16px;
-    background-color: rgb(250, 247, 238);
-    padding-bottom: 10px;
-    border-bottom: 1px solid gray;
-}
-.salondis li ul li:hover{
-    background-color: rgb(126, 89, 63);
-    color: whitesmoke;
-}
-
-.newsdis li:hover{
-    background-color: rgb(198, 170, 122);
-    padding-bottom: 0px;
-}
-.newsdis li:hover > a{
-    color: snow;
-}
-.newsdis li:hover > ul{
-    display: block;
-    margin-top: 10px;
-    margin-left: -10px;
-}
-.newsdis li:hover > ul li{
-    font-size: 16px;
-    background-color: rgb(250, 247, 238);
-    padding-bottom: 10px;
-    border-bottom: 1px solid gray;
-}
-.newsdis li ul li:hover{
-    background-color: rgb(126, 89, 63);
-    color: whitesmoke;
-}
-
-.newsList{
-    margin-bottom: 900px;
-}
-.disInfo{
-    margin-left: 50px;
-}
-.disRoomPro1{
-    display: flex;
-    flex-direction: row;
-}
-.disRoomPro1 img{
-    width: 20px;
-    height: 20px;
-    padding-top: 18px;
-}
-.disRoomPro1 p{
-    font-family: '微軟正黑體';
-    font-size: 18px;
-    color: wheat;
-}
-.disRoomImg img{
+.main_pic {
     width: 800px;
-    height: 450px;
+    height: auto;
 }
-.disp p{
-    font-family: '微軟正黑體';
+.room_name {
+    font-family: Helvetica, Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
+    font-size: 25px;
+    color: #A39480;
+    margin-left: 168px; 
+}
+.main_right {
+    font-family: Helvetica, Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
+    font-size: 20px;
     color: white;
+    width: 430px;
+    display: flex;
+    flex-wrap:wrap;
+    align-content:space-between;
 }
-.disp h4{
-    font-family: '微軟正黑體';
-    color: wheat;
+.main_right .line {
+    border-style: dotted;
+    border-color: #A39480;
+    border-width: 2px 0px 0px 0px;
 }
-.disp{
-    margin-left: 30px;
+.main_right .room_info_label {
+    font-size: 30px;
+    text-align: center;
 }
+.room_detail {
+    border-style: solid;
+    border-color: #A39480;
+    background-color:rgba(163,148,128,0.1);
+    border-width: 2px;
+    padding-right: 153px; 
+}
+.room_bottom {
+    border-style: solid;
+    border-color: #A39480;
+    width: 1565px;
+    margin: 30px 168px;
+    background-color:rgba(163,148,128,0.1);
+    border-width: 2px;
+}
+.facility {
+    font-family: Helvetica, Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 40px;
+}
+.facility_detail {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-around;
+    padding-bottom: 50px;
+}
+.facility_detail_text {
+    font-family: Helvetica, Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 486px;
+    margin: 10px 148px;
+}
+
 /* ------------------------------- footer -----------------------------------*/
 footer{
     padding-left: 15%;
@@ -367,7 +257,6 @@ footer{
 .footerBox{
     padding-top: 10px;
     padding-bottom: 10px;
-    display: flex;
 }
 .logoes{
     width: fit-content;
@@ -399,6 +288,7 @@ footer{
     margin-left: 50px;
     border-bottom: 1px solid rgb(255, 255, 255);
     width: 925px;
+    max-width: 925px;
     color: wheat;
 }
 .infoList ul{
@@ -471,6 +361,7 @@ footer{
     margin-left: 50px;
     float: left;
     width: 925px;
+    max-width: 925px;
     color: wheat;
 }
 .adress{
