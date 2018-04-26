@@ -20,7 +20,7 @@ header img{
 header{
     display: flex;
     height: 120px;
-    background-image: url('../images/headerBack.png');
+    background-color: wheat;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -360,7 +360,7 @@ footer{
     padding-left: 15%;
     padding-right: 15%;
     height: 200px;
-    background-image: url('../images/footerBack.png');
+    background-color: wheat;
     background-repeat: no-repeat;
     background-size: cover;
 }
