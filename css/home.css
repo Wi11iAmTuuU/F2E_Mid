@@ -158,6 +158,16 @@ nav:after{
     margin-bottom: 80px;
     display: flex;
 }
+.pic3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bigINFO{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .slide1 img{
     float: left;
     width: 480px;
