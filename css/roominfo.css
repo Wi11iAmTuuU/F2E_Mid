@@ -20,7 +20,7 @@ header img{
 header{
     display: flex;
     height: 120px;
-    background-color: wheat
+    background-color: wheat;
     background-repeat: no-repeat;
     background-size: cover;
 }
