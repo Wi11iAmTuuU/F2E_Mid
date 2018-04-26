@@ -151,39 +151,58 @@ nav:after{
     display: block;
     clear: both;
 }
-
-/* ------------------------------- article ----------------------------------*/
-article {
-    background: black;
-}
-.fixed_item .fixed_pic{
+/* ------------------------------- main -----------------------------------*/
+.mainImg img{
     width: 100%;
-    background-position: center center;
+    height: 720px;
+    margin-bottom: 80px;
 }
-.unfixed_item .title {
-    font-family: Helvetica, Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
-    font-size: 25px;
-    color: white;
-    text-align: center;
+.salonInfoBox{
+    margin-left: 15%;
+    margin-right: 15%;
 }
-.fixed_item .fixed_line{
-    display: block;
-    margin-left: 485px;
-}
-.hotel_info p {
-    font-family: Helvetica, Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
+.issue p{
+    font-family: '微軟正黑體';
     font-size: 18px;
     color: white;
-    width: 1206px;
-    margin-left: 356px;
-    margin-top: 30px;
-    margin-bottom: 30px;  
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: 20px;
 }
-.hotel_info .final_info {
-    padding-bottom: 30px;
-    margin-bottom: 0px;
+.crossLine img{
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
 }
-
+.salonInfo{
+    margin-bottom: 30px;
+}
+.salonInfo p{
+    font-family: '微軟正黑體';
+    font-size: 16px;
+    color: white;
+}
+.salonImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 7px;
+}
+.salonImg img{
+    width: 300px;
+    height: 180px;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.name p{
+    font-family: '微軟正黑體';
+    font-size: 16px;
+    color: wheat;
+}
 /* ------------------------------- footer -----------------------------------*/
 footer{
     padding-left: 15%;

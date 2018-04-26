@@ -156,6 +156,7 @@ nav:after{
     width: 100%;
     height: 720px;
     margin-bottom: 80px;
+    display: flex;
 }
 .slide1 img{
     float: left;

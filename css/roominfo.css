@@ -2,7 +2,7 @@ body{
     margin: 0px;
     background-color: black;
 }
-body a:visited{
+a{
     color: wheat;
 }
 /* ------------------------------- header -----------------------------------*/
@@ -11,12 +11,14 @@ header img{
     height: inherit;
     margin-left: -50px;
     margin-top: 10px;
+    display: flex;
 }
 .LOGOBox{
     margin-left: 50%;
-    
+    display: flex;
 }
 header{
+    display: flex;
     height: 120px;
     background-image: url('../images/headerBack.png');
     background-repeat: no-repeat;
@@ -33,11 +35,6 @@ nav{
     margin-right: 15%;
     margin-bottom: 0px;
 }
-/* nav img{
-    width: 25px;
-    height: inherit;
-    float: left;
-} */
 nav a{
     text-decoration: none;
 }
@@ -154,7 +151,6 @@ nav:after{
     display: block;
     clear: both;
 }
-
 /* ------------------------------- article ----------------------------------*/
 article {
     background: black;
@@ -252,7 +248,6 @@ footer{
     margin-left: 50px;
     border-bottom: 1px solid rgb(255, 255, 255);
     width: 925px;
-    max-width: 925px;
     color: wheat;
 }
 .infoList ul{
@@ -325,7 +320,6 @@ footer{
     margin-left: 50px;
     float: left;
     width: 925px;
-    max-width: 925px;
     color: wheat;
 }
 .adress{
